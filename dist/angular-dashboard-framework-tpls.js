@@ -647,6 +647,7 @@ angular.module('adf')
             scope: editDashboardScope,
             templateUrl: adfEditTemplatePath,
             backdrop: 'static',
+            windowClass: 'adf-edit-dashboard-modal',
             size: 'lg'
           });
           editDashboardScope.changeStructure = function(name, structure){
@@ -698,6 +699,7 @@ angular.module('adf')
           var opts = {
             scope: addScope,
             templateUrl: adfAddTemplatePath,
+            windowClass: 'adf-add-widget-modal',
             backdrop: 'static'
           };
 
@@ -1696,6 +1698,7 @@ angular.module('adf')
             var opts = {
               scope: deleteScope,
               templateUrl: deleteTemplateUrl,
+              windowClass: 'adf-remove-widget-modal',
               backdrop: 'static'
             };
             var instance = $uibModal.open(opts);
@@ -1732,6 +1735,7 @@ angular.module('adf')
           var opts = {
             scope: editScope,
             templateUrl: adfEditTemplatePath,
+            windowClass: 'adf-edit-widget-modal',
             backdrop: 'static'
           };
 
